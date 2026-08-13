@@ -1,0 +1,13 @@
+name: Echo
+
+on:
+  workflow_dispatch:
+
+jobs:
+  echo:
+    runs-on: ubuntu-22.04
+    steps:
+      - name: Echo the word "echo"
+        run: echo "echo"
+      - run: echo "echo part2!"
+      - run: echo "echo part3?"
